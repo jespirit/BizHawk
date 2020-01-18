@@ -34,6 +34,7 @@
 		<Optimize>true</Optimize>
 	</PropertyGroup>
 	<Import Project="$(MSBuildExtensionsPath)/$(MSBuildToolsVersion)/Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)/$(MSBuildToolsVersion)/Microsoft.Common.props')" />
+	<Import Project="../CommonStyleCopAnalyzer.abs.props" />
 	<Import Project="../CommonRefAssemblies.abs.props" Condition=" '$(OS)' != 'Windows_NT' " />
 	<ItemGroup>
 		<Reference Include="CSharp-SQLite"
