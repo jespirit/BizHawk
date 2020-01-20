@@ -3,29 +3,13 @@
 	<PropertyGroup>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<OutputPath>../output/dll</OutputPath>
-		<TargetFramework>net48</TargetFramework>
+		<TargetFramework>netstandard2.0</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
-		<!--<Reference Include="Microsoft.CSharp" />-->
-		<!--<Reference Include="System" />-->
-		<!--<Reference Include="System.Core" />-->
-		<!--<Reference Include="System.Data" />-->
-		<!--<Reference Include="System.Data.DataSetExtensions" />-->
-		<!--<Reference Include="System.Xml" />-->
-		<!--<Reference Include="System.Xml.Linq" />-->
-	</ItemGroup>
-	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" PrivateAssets="All" />
-	</ItemGroup>
-	<ItemGroup>
 		<ProjectReference Include="../BizHawk.Emulation.DiscSystem/BizHawk.Emulation.DiscSystem.csproj" />
-	</ItemGroup>
-	<ItemGroup>
 		<Compile Include="../Version/svnrev.cs" />
 		<Compile Include="../Version/VersionInfo.cs" />
-	</ItemGroup>
-	<ItemGroup>
 		<Compile Remove="Interfaces/IHookManager.cs" />
 	</ItemGroup>
 </Project>
