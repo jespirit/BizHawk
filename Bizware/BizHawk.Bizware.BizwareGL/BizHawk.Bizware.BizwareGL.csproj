@@ -3,29 +3,18 @@
 	<PropertyGroup>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<OutputPath>../../output/dll</OutputPath>
-		<TargetFramework>net48</TargetFramework>
+		<TargetFramework>netstandard2.0</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
-		<Reference Include="System.Windows.Forms" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" PrivateAssets="All" />
+		<PackageReference Include="System.Drawing.Common" Version="4.7.0" PrivateAssets="All" />
 		<PackageReference Include="OpenTK" Version="3.0.1" PrivateAssets="All" />
-		<PackageReference Include="OpenTK.GLControl" Version="3.0.1" PrivateAssets="All" />
-		<Reference Include="SlimDX"
-			HintPath="../../References/x64/SlimDX.dll"
-			Private="true" />
 		<ProjectReference Include="../../BizHawk.Common/BizHawk.Common.csproj" />
-	</ItemGroup>
-	<ItemGroup>
 		<Compile Remove="CacheBlendState.cs" />
 		<Compile Remove="GuiRendererBase.cs" />
 		<Compile Remove="RetroShader_OpenTK.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Update="GLControlWrapper_GdiPlus.cs" SubType="Component" />
-		<Compile Update="GLControlWrapper_SlimDX9.cs" SubType="Component" />
-		<Compile Update="GraphicsControl.cs" SubType="UserControl" />
-		<Compile Update="GraphicsControl_TK.cs" SubType="UserControl" />
 		<Compile Update="IGuiRenderer.cs" SubType="Code" />
-		<Compile Update="RetainedGraphicsControl.cs" SubType="UserControl" />
 	</ItemGroup>
 </Project>

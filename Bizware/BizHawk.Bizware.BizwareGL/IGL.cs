@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Drawing;
-using swf=System.Windows.Forms;
 
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
@@ -207,10 +206,12 @@ namespace BizHawk.Bizware.BizwareGL
 		/// </summary>
 		void SetViewport(int width, int height);
 
+#if false // Unused and WinForms unavailable on .NET Standard
 		/// <summary>
 		/// sets the viewport (and scissor) according to the client area of the provided control
 		/// </summary>
-		void SetViewport(swf.Control control);
+		void SetViewport(System.Windows.Forms.Control control);
+#endif
 
 		/// <summary>
 		/// sets the viewport (and scissor) according to the provided specifications
