@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
 using System.Runtime.InteropServices;
 using BizHawk.Common;
 using BizHawk.Common.NumberExtensions;

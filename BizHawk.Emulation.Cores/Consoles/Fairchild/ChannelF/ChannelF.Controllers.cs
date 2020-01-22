@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 using BizHawk.Common.BufferExtensions;
 using BizHawk.Common.NumberExtensions;
 using BizHawk.Emulation.Common;
