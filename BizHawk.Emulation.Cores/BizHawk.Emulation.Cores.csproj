@@ -59,6 +59,7 @@
 			Private="true" />
 	</ItemGroup>
 	<ItemGroup>
+		<ProjectReference Include="../BizHawk.BizInvoke/BizHawk.BizInvoke.csproj" />
 		<ProjectReference Include="../BizHawk.Emulation.Common/BizHawk.Emulation.Common.csproj" />
 	</ItemGroup>
 	<ItemGroup>
